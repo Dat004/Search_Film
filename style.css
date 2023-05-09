@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* letter-spacing: 1px\\; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes toRight {
+    100% {
+        width: 0%;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(22, 22, 21) 50%, rgb(240, 157, 56) 50%);
+}
+
+.container .box {
+    background-color: #1E283E;
+    width: 550px;
+    /* height: 650px; */
+    margin: auto;
+    border-radius: 6px;
+}
+
+.box .box_content {
+    padding: 40px 25px;
+}
+
+header .form_search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+header .form_search input {
+    border: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    flex: 1;
+    padding: 10.5px 10px;
+}
+
+header .form_search button {
+    /* position: relative; */
+    background-color: orange;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #222;
+    font-weight: 500;
+    /* overflow: hidden; */
+    /* z-index: 5; */
+}
+
+header .form_search button:hover {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+/* header .form_search button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+    background-color: orange;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+header .form_search button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 0%;
+    height: 100%;
+    background-color: orange;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+header .form_search button:hover::before {
+    width: 100%;
+    z-index: -1;
+}
+header .form_search button:hover::after {
+    width: 100%;
+    z-index: -1;
+} */
+
+.body {
+    position: relative;
+}
+
+.body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1E283E;
+    animation: toRight 0.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.body .found {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.body .found span {
+    color: #fff;
+    font-size: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section .info {
+    display: flex;
+    gap: 0 12px;
+}
+
+.info .poster {
+    flex: 1;
+    overflow: hidden;
+}
+
+.info .poster img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border: 1px solid #a68e8e;
+}
+
+.info .title {
+    flex: 2;
+    text-align: center;
+}
+
+.info .title .name_film {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.info .title .rank {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.info .title .rank .fa-solid {
+    color: #ede908;
+}
+
+.info .title .watch {
+    color: #8993a8;
+    margin-bottom: 12px;
+    gap: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .title .category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info .title .category a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #586278;
+    background: transparent;
+}
+
+aside .content h4 {
+    color: #fff;
+    font-size: 20px;
+}
+
+aside .content span {
+    color: #e4dede;
+    font-size: 15px;
+}
+
+aside .content:nth-child(1) {
+    margin-bottom: 25px;
+}
+
